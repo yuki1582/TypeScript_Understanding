@@ -1,16 +1,7 @@
-let userInput: unknown;
-let userName: string;
+const button = document.querySelector("button");
 
-userInput = 4;
-userInput = "aaa";
+button?.addEventListener("click", () => {
+  console.log("Clicked!");
+});
 
-if (typeof userInput === "string") {
-  userName = userInput;
-}
-
-function generateError(message: string, code: number): void {
-  throw {message: message, errorCode: code}
-}
-
-const result = generateError("エラーが発生しました", 500);
-console.log(result);
+const map = new Map()

@@ -1,12 +1,7 @@
-var userInput;
-var userName;
-userInput = 4;
-userInput = "aaa";
-if (typeof userInput === "string") {
-    userName = userInput;
-}
-function generateError(message, code) {
-    throw { message: message, errorCode: code };
-}
-var result = generateError("エラーが発生しました", 500);
-console.log(result);
+"use strict";
+const button = document.querySelector("button");
+button === null || button === void 0 ? void 0 : button.addEventListener("click", () => {
+    console.log("Clicked!");
+});
+const map = new Map();
+//# sourceMappingURL=app.js.map
